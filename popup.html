@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab Goblin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="goblin">👹</div>
+      <div>
+        <h1>Tab Goblin</h1>
+        <p id="mood">Your tabs, under control</p>
+      </div>
+    </header>
+    <section class="stats">
+      <div><strong id="tabCount">0</strong><span>Open tabs</span></div>
+      <div><strong id="sleepCount">0</strong><span>Sleeping</span></div>
+    </section>
+    <div class="actions">
+      <button id="refresh">Refresh list</button>
+      <button id="saveSession" class="primary">Save session</button>
+      <button id="restoreSession">Restore session</button>
+    </div>
+    <h2>Tabs by last activity</h2>
+    <p class="hint">Sleep tabs to discard their page memory without closing them. Keep important tabs safe.</p>
+    <div id="tabList" class="tab-list"></div>
+    <h2>Saved sessions</h2>
+    <div id="sessions" class="sessions"></div>
+    <footer>Tab Goblin • Local browser storage</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

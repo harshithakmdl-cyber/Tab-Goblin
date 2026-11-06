@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Goblin",
+  "version": "1.0.0",
+  "description": "Organize ignored tabs, put tabs to sleep, and save sessions.",
+  "permissions": ["tabs", "storage", "sessions"],
+  "action": {
+    "default_title": "Tab Goblin",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
